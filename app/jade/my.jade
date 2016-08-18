@@ -1,0 +1,18 @@
+extends ./layout/_default.jade
+
+block _variables
+    - var title = "个人中心"
+
+block _head
+    // build:css styles/my.css
+    +import('css', 'styles/my.css')
+    // endbuild
+
+block _content
+    div.my
+        | hello world!
+
+block _foot
+    // build:js scripts/my.js
+    +import('js','scripts/my.js')
+    //endbuild

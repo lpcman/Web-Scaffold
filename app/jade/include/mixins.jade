@@ -1,0 +1,10 @@
+- var BASE_URL = ''
+
+mixin import(type, src)
+    case type
+        when 'css'
+            link(href= BASE_URL + src, rel='stylesheet', type='text/css')
+        when 'js'
+            script(src= BASE_URL + src, type='text/javascript')
+
+
